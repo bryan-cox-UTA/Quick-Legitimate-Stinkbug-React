@@ -14,7 +14,8 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test --env=jsdom",
-    "eject": "craco eject"
+    "eject": "craco eject",
+    "build:digitalocean": "npm install --production=false && npm run build && npm ci"
   },
   "engines": {
     "node": "18.x"
