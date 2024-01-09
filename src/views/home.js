@@ -1,5 +1,6 @@
 import React from 'react'
 
+import Script from 'dangerous-html/react'
 import { Helmet } from 'react-helmet'
 
 import FeatureCard from '../components/feature-card'
@@ -15,15 +16,56 @@ const Home = (props) => {
       </Helmet>
       <div className="home-hero">
         <div className="home-hero1">
-          <h1 className="home-hero-heading heading1">OurScene</h1>
-          <div className="home-container01">
+          <img alt="image" src="/thelogo-500w.jpg" className="home-image" />
+          <h1 className="home-hero-heading heading1">
+            The Revolution is coming soon...
+          </h1>
+          <div>
+            <div className="home-container02">
+              <Script
+                html={`<div id="mc_embed_shell">
+      <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+        #mc_embed_signup{background:#fff; false:;clear:left; font:14px Helvetica,Arial,sans-serif; width: 600px;}
+        /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+           We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+    <form action="https://ourscenemusic.us21.list-manage.com/subscribe/post?u=baaabc6498ea0ee777c81e683&amp;id=e665598b34&amp;f_id=006bf1e6f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+        <div id="mc_embed_signup_scroll"><h2>Subscribe</h2>
+            <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+            <div class="mc-field-group"><label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value=""></div><div class="mc-field-group"><label for="mce-FNAME">First Name </label><input type="text" name="FNAME" class=" text" id="mce-FNAME" value=""></div><div class="mc-field-group"><label for="mce-LNAME">Last Name </label><input type="text" name="LNAME" class=" text" id="mce-LNAME" value=""></div>
+        <div id="mce-responses" class="clear foot">
+            <div class="response" id="mce-error-response" style="display: none;"></div>
+            <div class="response" id="mce-success-response" style="display: none;"></div>
+        </div>
+    <div aria-hidden="true" style="position: absolute; left: -5000px;">
+        /* real people should not fill this in and expect good things - do not remove this or risk form bot signups */
+        <input type="text" name="b_baaabc6498ea0ee777c81e683_e665598b34" tabindex="-1" value="">
+    </div>
+        <div class="optionalParent">
+            <div class="clear foot">
+                <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
+                <p style="margin: 0px auto;"><a href="http://eepurl.com/iGn6U2" title="Mailchimp - email marketing made easy and fun"><span style="display: inline-block; background-color: transparent; border-radius: 4px;"><img class="refferal_badge" src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg" alt="Intuit Mailchimp" style="width: 220px; height: 40px; display: flex; padding: 2px 0px; justify-content: center; align-items: center;"></span></a></p>
+            </div>
+        </div>
+    </div>
+</form>
+</div>
+<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function(\$) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var \$mcj = jQuery.noConflict(true);</script></div>
+
+`}
+              ></Script>
+            </div>
+          </div>
+          <div className="home-container03">
             <div className="home-btn-group"></div>
           </div>
         </div>
       </div>
       <div className="home-details">
         <div className="home-details1">
-          <div className="home-container02">
+          <div className="home-container04">
             <span className="home-text sectionTitle">
               <span>Details</span>
               <br></br>
@@ -48,7 +90,7 @@ const Home = (props) => {
       <div className="home-features">
         <div className="home-features-container">
           <div className="home-features1">
-            <div className="home-container03">
+            <div className="home-container05">
               <span className="home-text03 sectionTitle">
                 <span>features</span>
                 <br></br>
@@ -61,7 +103,7 @@ const Home = (props) => {
                 for connecting venues, promoters, artists, and fans.
               </span>
             </div>
-            <div className="home-container04">
+            <div className="home-container06">
               <FeatureCard
                 Heading="Connect Venues with Promoters"
                 SubHeading="Easily connect venues with promoters to book shows and events."
@@ -84,7 +126,7 @@ const Home = (props) => {
       </div>
       <div className="home-pricing">
         <div className="home-pricing1">
-          <div className="home-container05">
+          <div className="home-container07">
             <span className="home-text06 sectionTitle">
               <span>Pricing</span>
               <br></br>
@@ -94,15 +136,15 @@ const Home = (props) => {
               Find the perfect plan for your needs
             </span>
           </div>
-          <div className="home-container06">
+          <div className="home-container08">
             <div className="home-pricing-card">
-              <div className="home-container07">
+              <div className="home-container09">
                 <span className="home-text09 heading3">Premium Listener</span>
                 <span className="home-basic-plan-description">
                   Unlock additional features for a small fee
                 </span>
               </div>
-              <div className="home-container08">
+              <div className="home-container10">
                 <span className="home-text10">
                   <span>$</span>
                   <span></span>
@@ -110,28 +152,28 @@ const Home = (props) => {
                 <span className="home-basic-plan-pricing">5</span>
                 <span className="home-text13">/ month</span>
               </div>
-              <div className="home-container09">
-                <div className="home-container10">
+              <div className="home-container11">
+                <div className="home-container12">
                   <span className="home-text14">✔</span>
                   <span className="home-text15">All features of FREE plan</span>
                 </div>
-                <div className="home-container11">
+                <div className="home-container13">
                   <span className="home-text16">✔</span>
                   <span className="home-basic-plan-features">
                     Access to tickets sooner
                   </span>
                 </div>
-                <div className="home-container12">
+                <div className="home-container14">
                   <span className="home-text17">✔</span>
                   <span className="home-basic-plan-features1">Remove ads</span>
                 </div>
-                <div className="home-container13">
+                <div className="home-container15">
                   <span className="home-text18">✔</span>
                   <span className="home-basic-plan-features2">
                     Create custom playlists
                   </span>
                 </div>
-                <div className="home-container14">
+                <div className="home-container16">
                   <span className="home-text19">✔</span>
                   <span className="home-basic-plan-features3">
                     Basic Plan Feature
@@ -140,14 +182,14 @@ const Home = (props) => {
               </div>
             </div>
             <div className="home-pricing-card1">
-              <div className="home-container15">
+              <div className="home-container17">
                 <span className="home-text20 heading3">Premium Artists</span>
                 <span className="home-free-plan-description">
                   In addition to being able to upload and be played on local
                   OurScene Radio
                 </span>
               </div>
-              <div className="home-container16">
+              <div className="home-container18">
                 <span className="home-text21">
                   <span>$</span>
                   <span></span>
@@ -155,27 +197,27 @@ const Home = (props) => {
                 <span className="home-pro-plan-pricing">13</span>
                 <span className="home-text24">/ month</span>
               </div>
-              <div className="home-container17">
-                <div className="home-container18">
-                  <div className="home-container19">
+              <div className="home-container19">
+                <div className="home-container20">
+                  <div className="home-container21">
                     <span className="home-text25">✔</span>
                     <span className="home-text26">
                       All features of FREE plan
                     </span>
                   </div>
-                  <div className="home-container20">
+                  <div className="home-container22">
                     <span className="home-text27">✔</span>
                     <span className="home-free-plan-features">
                       Get on regional OurScene radio stations
                     </span>
                   </div>
-                  <div className="home-container21">
+                  <div className="home-container23">
                     <span className="home-text28">✔</span>
                     <span className="home-free-plan-features1">
                       Connect with venues and promoters
                     </span>
                   </div>
-                  <div className="home-container22">
+                  <div className="home-container24">
                     <span className="home-text29">✔</span>
                     <span className="home-free-plan-features2">
                       More customization options on your band page
@@ -185,7 +227,7 @@ const Home = (props) => {
               </div>
             </div>
             <div className="home-pricing-card2">
-              <div className="home-container23">
+              <div className="home-container25">
                 <span className="home-text30 heading3">
                   <span>Promoter/venue</span>
                   <br></br>
@@ -194,7 +236,7 @@ const Home = (props) => {
                   Get the ultimate experience with premium features
                 </span>
               </div>
-              <div className="home-container24">
+              <div className="home-container26">
                 <span className="home-text33">
                   <span>$</span>
                   <span></span>
@@ -202,29 +244,29 @@ const Home = (props) => {
                 <span className="home-pro-plan-pricing1">30</span>
                 <span className="home-text36">/ month</span>
               </div>
-              <div className="home-container25">
-                <div className="home-container26">
+              <div className="home-container27">
+                <div className="home-container28">
                   <span className="home-text37">✔</span>
                   <span className="home-text38">
-                     All features of BASIC plan
-                  </span>
-                </div>
-                <div className="home-container27">
-                  <span className="home-text39">✔</span>
-                  <span className="home-pro-plan-features">
-                    Upload more music
-                  </span>
-                </div>
-                <div className="home-container28">
-                  <span className="home-text40">✔</span>
-                  <span className="home-pro-plan-features1">
-                    Get on national and regional radio stations
+                     All features of free plan
                   </span>
                 </div>
                 <div className="home-container29">
+                  <span className="home-text39">✔</span>
+                  <span className="home-pro-plan-features">
+                    Get in depth information to plan better shows
+                  </span>
+                </div>
+                <div className="home-container30">
+                  <span className="home-text40">✔</span>
+                  <span className="home-pro-plan-features1">
+                    Sell tickets online for your show
+                  </span>
+                </div>
+                <div className="home-container31">
                   <span className="home-text41">✔</span>
                   <span className="home-pro-plan-features2">
-                    More customization options for personal page
+                    Clear money faster
                   </span>
                 </div>
               </div>
@@ -246,7 +288,7 @@ const Home = (props) => {
       <div className="home-faq">
         <div className="home-faq-container">
           <div className="home-faq1">
-            <div className="home-container30">
+            <div className="home-container32">
               <span className="home-text42 sectionTitle">
                 <span>FAQ</span>
                 <br></br>
@@ -327,7 +369,7 @@ const Home = (props) => {
                 </span>
               </span>
             </div>
-            <div className="home-container31">
+            <div className="home-container33">
               <Question
                 Answer="OurScene is a music app being developed to help connect venues with promoters, promoters with artists, and artists with fans. It aims to grow the local music scene by providing easy booking for artists and promoters/venues."
                 Question="What is OurScene?"
@@ -354,7 +396,7 @@ const Home = (props) => {
       </div>
       <div className="home-footer">
         <footer className="home-footer1">
-          <div className="home-container32">
+          <div className="home-container34">
             <span className="home-logo">OURSCENE</span>
             <nav className="home-nav">
               <span className="home-nav1">About</span>
@@ -365,7 +407,7 @@ const Home = (props) => {
             </nav>
           </div>
           <div className="home-separator"></div>
-          <div className="home-container33">
+          <div className="home-container35">
             <span className="home-text63">
               © 2023 myCompany, All Rights Reserved.
             </span>
